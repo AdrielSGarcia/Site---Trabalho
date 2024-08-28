@@ -105,7 +105,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(175, 238, 199, 0);
+  -webkit-tap-highlight-color: rgba(89, 221, 139, 0);
 }
 
 hr {
@@ -602,8 +602,13 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  margin-left: -18vw;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+.img-fluid img{
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -10981,42 +10986,44 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #3CDE8D;
+  background-color: #000000;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #3CDE8D;
+  color: #000;
   border: 1px solid #3CDE8D;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #3CDE8D;
+  color: #fff;
   font-weight: 700;
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#000, 80%);
   outline: none;
   background-color: transparent;
 }
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: #fff;
+  background-color: rgba(36, 44, 43, 0.5);
+  transition: 0.8s;
 }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background: linear-gradient(#439EAE,#3CDE8D);
-    transition: background-color 0.3s ease-in-out;
+    background: linear-gradient(#47F568,#3CDE8D, #71F5B6);
+    transition: all 0.8s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: 0.9rem 0;
-    color: #D1CBC2;
+    color: #27293b;
     font-size: 27px;
     text-decoration: double;
     text-decoration-thickness: 10px;
@@ -11024,28 +11031,28 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: #DADEC5;
+    color: #27293b;
   }
   #mainNav .nav-link:hover {
-    color: #99DE3C;
+    color: #839c62;
     transition: 0.5s;
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: #839c62;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #27293b;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: #27293b;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #000;
+    color: #27293b;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #839c62;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
@@ -11073,7 +11080,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/montanhas.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11116,11 +11123,16 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, #000 0%, #0f0f0f 5%, rgb(93, 148, 124) 20%, rgba(129, 211, 174, 0.774) 35%, rgb(223, 252, 237) 50%, #f8f9fa 70%);
+  padding-top: 3rem;
+  align-content: flex-start;
 }
+.about-section img{
+  margin-right: 30vw;
+}
+
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: -25rem;
 }
 
 .projects-section {
