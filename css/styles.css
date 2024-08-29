@@ -7468,6 +7468,10 @@ textarea.form-control-lg {
   height: 100vh !important;
 }
 
+.vh-62 {
+  height: 62vh !important;
+}
+
 .min-vh-100 {
   min-height: 100vh !important;
 }
@@ -11009,7 +11013,7 @@ body {
 }
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: rgba(36, 44, 43, 0.5);
+  background-color: rgba(134, 235, 225, 0.5);
   transition: 0.8s;
 }
 
@@ -11018,47 +11022,53 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background: linear-gradient(#47F568,#3CDE8D, #71F5B6);
+    background: transparent linear-gradient(rgba(198, 229, 204, 0.185), rgba(117, 250, 186, 0.179));
     transition: all 0.8s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: 0.9rem 0;
-    color: #27293b;
+    color: #555768;
     font-size: 27px;
     text-decoration: double;
     text-decoration-thickness: 10px;
   }
   #mainNav .nav-link {
-    transition: none;
     padding: 2rem 1.5rem;
     color: #27293b;
+    transition: 0.5s;
   }
   #mainNav .nav-link:hover {
-    color: #839c62;
+    color: #b7e89e;
+    text-shadow: 1px 0 0 #1e1e1e, 0 -1px 0 #1e1e1e, 0 1px 0 #1e1e1e, -1px 0 0 #1e1e1e;
+    font-size: 17px;
     transition: 0.5s;
   }
   #mainNav .nav-link:active {
     color: #839c62;
   }
   #mainNav.navbar-shrink {
-    background-color: #27293b;
+    background-color: #709e9179;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #27293b;
+    color: #ffffff;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #27293b;
+    color: #303030;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
+    
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #839c62;
+    color: #b5e1b5;
+    text-shadow: 1px 0 0 #4b4b4b, 0 -1px 0 #4b4b4b, 0 1px 0 #4b4b4b, -1px 0 0 #4b4b4b;
+    font-size: 17px;
+    transition: 0.5s;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #5c6d6c;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #399591;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
@@ -11123,21 +11133,39 @@ body {
 }
 
 .about-section {
-  background: linear-gradient(to bottom, #000 0%, #0f0f0f 5%, rgb(93, 148, 124) 20%, rgba(129, 211, 174, 0.774) 35%, rgb(223, 252, 237) 50%, #f8f9fa 70%);
+  background: linear-gradient(to bottom, #000 0%, rgba(93, 148, 124, 0.963) 20%, rgba(129, 211, 174, 0.774) 35%, rgb(223, 252, 237) 50%, #f8f9fa 70%);
   padding-top: 3rem;
-  align-content: flex-start;
+  text-align: right;
 }
+
+#fix-place{
+  padding-top: 22vh;
+}
+
+#fix-place a{
+  z-index: 1;
+}
+
 .about-section img{
-  margin-right: 30vw;
+  margin-left: -50vw;
+  margin-top: -45vh;
+  padding-bottom: 0;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .about-section p {
-  margin-bottom: -25rem;
+  margin-bottom: -15rem;
 }
 
 .projects-section {
   padding: 10rem 0;
 }
+
+.projects-section p{
+  color: rgb(255, 255, 255);
+}
+
 .projects-section .featured-text {
   padding: 2rem;
 }
@@ -11159,14 +11187,13 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 .signup-section .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(132, 166, 78, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

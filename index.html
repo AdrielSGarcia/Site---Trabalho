@@ -49,12 +49,12 @@
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="row gx-4 gx-lg-5 justify-content-end" id="fix-place">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Trying to find new minds</h2>
-                        <p class="text-white-50">
-                            We've been looking for new stars who's willing to find new solutions reduce all the world damage caused from us.<br>                            
-                            <a href="https://startbootstrap.com/theme/grayscale/">Here you can find more informations about our project</a> <br>
+                        <h2 class="text-black mb-4">Trying to find new minds</h2>
+                        <p class="text-black-50">
+                            We've been looking for new stars who's willing to find new solutions reduce all the world damage caused by human actions.<br>                            
+                            <a href="#">Here you can find more informations about our project</a> <br>
                             We accept all people around the world which has a new idea, and we'll find a way to make it real.
                         </p>
                     </div>
@@ -63,27 +63,27 @@
             </div>
         </section>
         <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section bg-light">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." id="projects"/></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h4 class="text-white">Story</h4>
+                            <p class="text-50 mb-0">Greenvalley was founded in 2004 at Oregon, was first a university project made by two developers in order to preserve the enviroment around the university, some years later they got a huge investment which launch the project to a new level where it could be able to apply around the world.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img" src="assets/img/demo-image-01.jpg" alt="..." /></div>
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-success text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                <div class="project-text w-590 my-auto text-center text-lg-left">
+                                    <h4 class="text-green">Every idea is valid</h4>
+                                    <p class="mb-0 text-black-50">There are some methods nowadays that may look irrelevant after so much digging but are pretty useful, like Recycling. <br> This action help a lot of people and industries to get new raw material to build new eletronics, bottles, clothes and plenty other things.</p>
                                 </div>
                             </div>
                         </div>
@@ -91,13 +91,13 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img vh-62 w-100" src="assets/img/demo-image-02.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-warning text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
+                                    <h4 class="text-black">Be strong!</h4>
+                                    <p class="mb-0 text-black-50">Don't be afraid, even if you have no interest about our project, try to make your idea real in your own way, every contribution is helpful to the world!</p>
                                 </div>
                             </div>
                         </div>
@@ -106,12 +106,12 @@
             </div>
         </section>
         <!-- Signup-->
-        <section class="signup-section" id="signup">
+        <section class="signup-section bg-success" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <h2 class="text-white mb-5">Subscribe to get in the project!</h2>
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -123,7 +123,7 @@
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
                                 <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Send</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
@@ -134,9 +134,6 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -150,7 +147,7 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section class="contact-section bg-success">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -159,7 +156,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">1778 Market Street, Orlando FL</div>
                             </div>
                         </div>
                     </div>
@@ -169,7 +166,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="#!">contact@greenvalley.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -192,7 +189,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
+        <footer class="footer bg-success small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Greenvalley 2024</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
